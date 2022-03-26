@@ -11,11 +11,10 @@ const Navbar = () => {
 
             {/* Liens navbar */}
                 <ul className="hidden md:flex">
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Experience</li>
-                    <li>My work</li>
-                    <li>Contact</li>
+                    <li>Accueil</li>
+                    <li>Mon parcours</li>
+                    <li>Mes travaux</li>
+                    <li>Me joindre</li>
                 </ul>
 
             {/* hamburger */}
@@ -25,14 +24,13 @@ const Navbar = () => {
 
             {/* mobile menu */}
             <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'}>
-                <li className="py-6 text-4xl">Home</li>
-                <li className="py-6 text-4xl">About</li>
-                <li className="py-6 text-4xl">Experience</li>
-                <li className="py-6 text-4xl">My work</li>
-                <li className="py-6 text-4xl">Contact</li>
+                <li className="py-6 text-4xl">Accueil</li>
+                <li className="py-6 text-4xl">Mon parcours</li>
+                <li className="py-6 text-4xl">Mes travaux</li>
+                <li className="py-6 text-4xl">Me joindre</li>
             </ul>
             {/* social icons */}
-            <div className="flex fixed flex-col top-[35%] left-0">
+            <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
                 <ul>
                     <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-500">
                         <a className="flex justify-between items-center w-full text-gray-300" href="/">
