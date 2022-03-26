@@ -35,10 +35,18 @@ const Navbar = () => {
 
             {/* mobile menu */}
             <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'}>
-                <li className="py-6 text-4xl">Accueil</li>
-                <li className="py-6 text-4xl">Mon parcours</li>
-                <li className="py-6 text-4xl">Mes travaux</li>
-                <li className="py-6 text-4xl">Me joindre</li>
+                <li className="py-6 text-4xl">                    <Link onClick={handleClick} to="home" smooth={true} duration={500} >
+                    Accueil
+                </Link></li>
+                <li className="py-6 text-4xl"><Link onClick={handleClick} to="journey" smooth={true} duration={500} >
+                    Parcours
+                </Link></li>
+                <li className="py-6 text-4xl"><Link onClick={handleClick} to="work" smooth={true} duration={500} >
+                    Projets
+                </Link></li>
+                <li className="py-6 text-4xl"><Link onClick={handleClick} to="contact" smooth={true} duration={500} >
+                    Contact
+                </Link></li>
             </ul>
             {/* social icons */}
             <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
